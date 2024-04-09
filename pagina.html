@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 10px;
+                background: #f1f1f1;
+            }
+            .header{
+                padding: 30px;
+                text-align: center;
+                background-image: url(viaje.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .header h1{
+                font-size: 50px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: black;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: #333;
+            }
+            .topnav a{
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .topnav a:hover{
+                background-color: #ddd;
+                color:black;
+            }
+            .leftcolumn{
+                float:left;
+                width: 75%;
+            }
+            .rightcolumn{
+                float: left;
+                width: 25%;
+                background-color: #f1f1f1;
+                padding-left: 20px;
+            }
+            .fakeimg{
+                background-color: transparent ;
+                width: 100%;
+                padding: 20px;
+            }
+            .card{
+                background-color: white;
+                padding: 20px;
+                margin-top: 20px;
+                font-size: 20px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            .row::after{
+                content: "";
+                display: table;
+                clear:both;
+            }
+            .footer{
+                padding: 10px;
+                text-align: left;
+                background-color: white;
+                margin-top: 50px;
+            }
+            table, th, td{
+                border: 3px solid black;
+                border-collapse: collapse;
+                border-style:outset;
+            }
+            button{
+                color: white;
+                padding: 10px;
+                background-color: black;
+                border-color: rgb(241, 18, 230);
+                border-width: 3px;
+                border-radius: 40px;
+            }
+            @media screen and (max-width: 800px){
+                .leftcolumn, .rightcolumn{
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+            @media screen and (max-width:400px){
+                .topnav a{
+                    float: none;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Los destinos mas populares</h1>
+            <br></br>
+        </div>
+
+        <div class="topnav">
+            <a href="#">Escapadas</a>
+            <a href="#">Grandes Viajes</a>
+            <a href="Colonia.jpg">Pueblo del Mes</a>
+            <a href="#" style="float:right">Suscribete</a>
+        </div>
+        
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>5 paises mas visitados del mundo</h2>
+                    <h5>El turismo ha sido sin duda uno de los sectores económicos y sociales más afectados por la pandemia de COVID-19 en los últimos años. Pero este panorama está cambiando, permitiendo a millones de personas volver a visitar sus lugares favoritos y descubrir nuevos destinos. <br></br>
+                        El ranking más reciente de los países más visitados del mundo realizado por la OMT y disponible en el informe International Tourism Highlights, Edición 2020 (con datos de 2019, prepandemia) muestra cuáles fueron los 10 destinos globales que recibieron el 40% de los turistas. <br></br>
+                        De esa lista, destacan los lugares de Europa y América como los que más han atraído turistas recientemente (aunque luchan por recuperar los mismos niveles anteriores a la pandemia). Mientras tanto, los países de Oriente Próximo y Asia han ido ganando notoriedad entre los viajeros que buscan circuitos internacionales. 
+                    </h5>
+                    <div class="fakeimg" style="height:400px;"><img src="paises.jpg" width="100%" height="100%"></div>
+                        <h1>Top 5:</h1>
+                        <ol>
+                            <h2><li>Francia:</li></h2>
+                            <p>El país más visitado del mundo tiene ese privilegio por la riqueza y variedad de su patrimonio histórico, artístico y natural. Los enclaves que encabezan la lista de más visitados en Francia son París, la Abadía del Mont Sant-Michel, Versalles, Alsacia, Mont Blanc y los Alpes.</p>
+                            <img src="francia.jpg" width="50%" height="50%">
+                            <h2><li>España:</li></h2>
+                            <p>España merece sin duda estar en el podium de destinos del mundo más visitados. Porque si por algo destaca nuestro país es por la variedad y riqueza de monumentos, paisajes, tradiciones, fiestas y atractivos gastronómicos y culturales, que incluye algunos museos de renombre mundial. Sus costas, playas y pueblos pescadores se hallan cada año entre los mejores del mundo.</p>
+                            <img src="españa.jpg" width="50%" height="50%">
+                            <h2><li>Estados Unidos:</li></h2>
+                            <p>El imán que tiene Estados Unidos es tan potente que siempre se sitúa en cifras entre los destinos más visitados por los turistas. De costa a costa, desde Washington o la desmesurada Nueva York a las californianas San Francisco y Los Ángeles, el viaje puede tomar de eje estas ciudades iconos, sin olvidar atravesar el corazón del país con enclaves inolvidables como Nueva Orleans, Filadelfia, Chicago o Boston. Por su lado, la liberal y artística Miami, en el cálido estado de Florida, es otro de los principales destinos receptores del país. </p>
+                            <img src="losangeles.jpg" width="50%" height="50%">
+                            <h2><li>Turquia:</li></h2>
+                            <p>Turquía, unión de culturas y vía de paso entre Oriente y Occidente, es un país repleto de tesoros naturales. Entre los más icónicos se hallan los montes y chimeneas pétreas de Capadocia, Pamukkale con sus piscinas blancas declaradas de Patrimonio de la Humanidad, o las islas de la «Costa Turquesa», en aguas del Egeo.</p>
+                            <img src="turquia.jpg" width="50%" height="50%">
+                            <h2><li>Mexico:</li></h2>
+                            <p>México DF, la megalópolis superpoblada, pero de gigantesco valor artístico, es además su entrada principal. Más allá de la capital, la imagen que se tiene de México son sus vestigios arqueológicos, como la Pirámide de Teotihuacán, Chichén Itzá y Tulum. Muchos viajeros amplían su estancia a destinos de arquitectura colonial como San Cristóbal de las Casas, Mérida, Morelia u Oaxaca.</p>
+                            <img src="mexico.jpg" width="50%" height="50%">
+                        </ol>
+                    </div>
+
+                    <div class="card">
+                        <h2><center><b>Pueblitos magicos para visitar</b></center></h2>
+                        <h5> </h5>
+                            <ul>
+                                <h2><li>Cuetzalan del Progreso, Mexico</li></h2>
+                                <p>El Pueblo Mágico que habita en la sierra entre bosques con niebla, cafetales, cascadas, cuevas, grutas y helechos gigantes; allá donde los pájaros inician su canto y el propio significado de su nombre lo afilia con la divina ave mítica de las culturas prehispánicas: el quetzal.</p>
+                                <img src="puebla.jpg" width="50%" height="50%">
+                                <h2><li>Pueblito las Vizcachas, Chile</li></h2>
+                                <p>Es un proyecto de parque ecológico, inclusivo, sostenible, turístico, gastronómico y social, emplazado en el corazón de la Provincia Cordillera, rodeado de naturaleza con mágicos y acogedores atractivos para sus visitantes.</p>
+                                <img src="Vizcacha.jpg" width="50%" height="50%">
+                                <h2><li>Colonia Tovar, Venezuela</li></h2>
+                                <p>Es una comarca ubicada a 65 kilómetros al este de Caracas. Fue fundada en 1843 por casi 400 inmigrantes que en un complicado viaje de varios meses llegaron a Venezuela desde el Ducado de Badén, antes de formarse la república de Alemania. A través de las generaciones han logrado conservar muchas de sus costumbres y tradiciones.</p>
+                                <img src="Colonia.jpg" width="50%" height="50%">
+                                <h2><li>Jardin(Antioquia), Colombia</li></h2>
+                                <p>Es una localidad andina del noroeste de Colombia, conocida por sus casas de colores brillantes, las exhibiciones florales coloridas y los dulces de leche. La plaza principal, Parque El Libertador, tiene rosaledas, una fuente central y la Basílica de la Inmaculada Concepción, de estilo neogótico y con torres gemelas y vista desde su campanario.</p>
+                                <img src="antioquia.jpg" width="50%" height="50%">
+                                <h2><li>Ascona, Suiza</li></h2>
+                                <p>es el lugar ubicado a menor altura de Suiza. Está a 196 m sobre el nivel del mar, en la orilla norte del Lago Maggiore (Lago Mayor). Ascona es conocida por su casco antiguo, su paseo lacustre con una atmósfera mediterránea, los cafés con terraza y su benigno clima.</p>
+                                <img src="ascona.jpg" width="50%" height="50%">
+                            </ul>
+                        </div>
+                </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <div class="fakeimg" style="height: 100px; padding: 10px;"><img src="viaje.gif" width="100%" height="200%"></div>
+                    <h2 style="color: transparent;">.</h2>
+                </div>
+                <div class="card" style="background-image:url(maleta.jpg); background-repeat: no-repeat; background-size: cover; color:black ;">
+                    <h3>Agencias Calificadas:</h3>
+                    <ul>
+                        <h5><li><a href="https://www.despegar.cl">Despegar.cl</a></li></h5>
+                        <h5><li><a href="https://www.namastephototours.com">Photo Tours</a></li></h5>
+                        <h5><li><a href="https://viajes.travel.cl">Travel Viajes</a></li></h5>
+                        <h5><li><a href="https://www.kayak.cl">Kayak</a></li></h5>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Follow Me</h3>
+                    <img src="sigueme.gif" width="100%" height="100%">
+                    <center><img src="redes.png" width="30%" height="30%"></center>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <img src="logo.jpg" width="10%" height="10%">
+            <table style="width: 20%;">
+                <tr>
+                    <th style="width:30% ;"> Nombre </th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><B>E-mail</B></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><B>Tu mensaje</B></td>
+                    <td></td>
+                </tr>
+            </table>
+            <button type="button" onclick="myFuction()">Enviar</button>
+
+            <center><a href="#">Politica de privacidad</a>
+            <a href="#"> Politica de Cookies</a></center>
+
+            <p>&copy;2024 Frases - Todos los derechos reservados</p>
+        </div>
+    </body>
+</html>
